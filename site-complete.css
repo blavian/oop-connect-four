@@ -12,7 +12,7 @@ button {
   text-transform: uppercase;
 }
 
- button[disabled] {
+button[disabled] {
   background-color: lightgray;
   color: grey;
   cursor: not-allowed;
@@ -120,4 +120,4 @@ main {
 .full.click-target:hover {
   background-color: white;
   cursor: no-drop;
-} 
+}
