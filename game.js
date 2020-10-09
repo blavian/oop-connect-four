@@ -9,15 +9,12 @@
     return `${this.player1} vs. ${this.player2}`
   }
 
-  playInColumn() {
+  playInColumn(number) {
     if (this.currentPlayer === 1) {
       this.currentPlayer = 2;
     } else {
       this.currentPlayer = 1;
     }
   }
-
-  game82 = Game(asdf, asdf , asdf)
-
-  
 }
+
