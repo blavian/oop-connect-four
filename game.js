@@ -1,10 +1,22 @@
- export default class Game {
-  constructor(player1, player2) {
-    this.player1 = player1;
-    this.player2= player2;
+ export class Game {
+  constructor(playerOneName, playerTwoName) {
+    this.player1 = playerOneName;
+    this.player2= playerTwoName;
+    this.currentPlayer = 1;
+
   }
 
   getName() {
-    return `${this.player1} vs. ${this.player2}`
+    return `${this.playerOneName} vs. ${this.playerTwoName}`
+  }
+
+  playInColumn() {
+    document.addEventListener('click', event => {
+      if (this.currentPlayer === 1) {
+        this.currentPlayer = 2;
+      } else (this.currentPlayer === 2) {
+        this.currentplayer = 1;
+      }
+    })
   }
 }
