@@ -13,7 +13,6 @@ function updateUI() {
 
   }
 
-
   if (currentPlayer === 1) {
     clickTarget.classList.add('red');
     clickTarget.classList.remove('black');
