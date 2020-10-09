@@ -48,8 +48,12 @@ window.addEventListener('DOMContentLoaded', event => {
  document
   .getElementById('click-targets')
   .addEventListener('click', event => {
-    game.playInColumn();
-    updateUI();
+    let targetId = event.target.id
+    if (targetId.startsWith('column')) {
+      let columnIndex = Number.parseInt(targetId.length - 1);
+      game.playInColumn(columnIndex);
+      updateUI();
+    }
   })
 
   function playerNameCheck () {
